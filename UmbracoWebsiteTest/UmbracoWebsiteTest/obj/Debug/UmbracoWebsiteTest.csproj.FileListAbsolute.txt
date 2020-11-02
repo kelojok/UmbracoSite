@@ -200,7 +200,6 @@ C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTes
 C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTest\bin\Umbraco.Web.xml
 C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTest\bin\Umbraco.Web.UI.xml
 C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTest\obj\Debug\UmbracoWebsiteTest.csprojAssemblyReference.cache
 C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTest\obj\Debug\UmbracoWebsiteTest.csproj.CopyComplete
 C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTest\obj\Debug\UmbracoWebsiteTest.dll
 C:\Users\Keloc\Documents\GitHub\UmbracoSite\UmbracoWebsiteTest\UmbracoWebsiteTest\obj\Debug\UmbracoWebsiteTest.pdb

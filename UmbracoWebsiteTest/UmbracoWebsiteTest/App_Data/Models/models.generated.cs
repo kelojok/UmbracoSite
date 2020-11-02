@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "da6661b3c21e3093")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fc0bbecaa1080a04")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -55,6 +55,13 @@ namespace Umbraco.Web.PublishedModels
 		public global::System.Web.IHtmlString MainContent => global::Umbraco.Web.PublishedModels.BasicContentControl.GetMainContent(this);
 
 		///<summary>
+		/// Page Subtitle: Insert a subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageSubtitle")]
+		public string PageSubtitle => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageSubtitle(this);
+
+		///<summary>
 		/// Page Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
@@ -69,6 +76,10 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Main Content</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		global::System.Web.IHtmlString MainContent { get; }
+
+		/// <summary>Page Subtitle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		string PageSubtitle { get; }
 
 		/// <summary>Page Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
@@ -112,6 +123,17 @@ namespace Umbraco.Web.PublishedModels
 		public static global::System.Web.IHtmlString GetMainContent(IBasicContentControl that) => that.Value<global::System.Web.IHtmlString>("mainContent");
 
 		///<summary>
+		/// Page Subtitle: Insert a subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageSubtitle")]
+		public string PageSubtitle => GetPageSubtitle(this);
+
+		/// <summary>Static getter for Page Subtitle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		public static string GetPageSubtitle(IBasicContentControl that) => that.Value<string>("pageSubtitle");
+
+		///<summary>
 		/// Page Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
@@ -121,6 +143,53 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Page Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		public static string GetPageTitle(IBasicContentControl that) => that.Value<string>("pageTitle");
+	}
+
+	/// <summary>Contact</summary>
+	[PublishedModel("contact")]
+	public partial class Contact : PublishedContentModel, IBasicContentControl
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		public new const string ModelTypeAlias = "contact";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Contact(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Main Content: Enter the main content for this page
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("mainContent")]
+		public global::System.Web.IHtmlString MainContent => global::Umbraco.Web.PublishedModels.BasicContentControl.GetMainContent(this);
+
+		///<summary>
+		/// Page Subtitle: Insert a subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageSubtitle")]
+		public string PageSubtitle => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageSubtitle(this);
+
+		///<summary>
+		/// Page Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageTitle")]
+		public string PageTitle => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageTitle(this);
 	}
 
 	/// <summary>Folder</summary>

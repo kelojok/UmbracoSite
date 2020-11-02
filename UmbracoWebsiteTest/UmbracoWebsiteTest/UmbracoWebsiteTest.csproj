@@ -309,6 +309,8 @@
     <Content Include="Views\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ContactSurfaceController.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -347,12 +349,17 @@
     <Content Include="Views\Master.cshtml" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Contact.cshtml" />
+    <Content Include="Views\Partials\Contact\_Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\ContactSurface\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
