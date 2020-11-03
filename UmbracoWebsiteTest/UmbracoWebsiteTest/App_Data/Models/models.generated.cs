@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7c1f9a2e659451ef")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "109430d569f38cb4")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -55,6 +55,13 @@ namespace Umbraco.Web.PublishedModels
 		public global::System.Web.IHtmlString MainContent => global::Umbraco.Web.PublishedModels.BasicContentControl.GetMainContent(this);
 
 		///<summary>
+		/// Page Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageDate")]
+		public global::System.DateTime PageDate => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageDate(this);
+
+		///<summary>
 		/// Page Subtitle: Insert a subtitle
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
@@ -67,6 +74,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		[ImplementPropertyType("pageTitle")]
 		public string PageTitle => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageTitle(this);
+
+		///<summary>
+		/// Page Toggle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageToggle")]
+		public bool PageToggle => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageToggle(this);
 	}
 
 	// Mixin Content Type with alias "basicContentControl"
@@ -77,6 +91,10 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		global::System.Web.IHtmlString MainContent { get; }
 
+		/// <summary>Page Date</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		global::System.DateTime PageDate { get; }
+
 		/// <summary>Page Subtitle</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		string PageSubtitle { get; }
@@ -84,6 +102,10 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Page Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		string PageTitle { get; }
+
+		/// <summary>Page Toggle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		bool PageToggle { get; }
 	}
 
 	/// <summary>Basic Content Control</summary>
@@ -123,6 +145,17 @@ namespace Umbraco.Web.PublishedModels
 		public static global::System.Web.IHtmlString GetMainContent(IBasicContentControl that) => that.Value<global::System.Web.IHtmlString>("mainContent");
 
 		///<summary>
+		/// Page Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageDate")]
+		public global::System.DateTime PageDate => GetPageDate(this);
+
+		/// <summary>Static getter for Page Date</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		public static global::System.DateTime GetPageDate(IBasicContentControl that) => that.Value<global::System.DateTime>("pageDate");
+
+		///<summary>
 		/// Page Subtitle: Insert a subtitle
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
@@ -143,6 +176,17 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Page Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		public static string GetPageTitle(IBasicContentControl that) => that.Value<string>("pageTitle");
+
+		///<summary>
+		/// Page Toggle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageToggle")]
+		public bool PageToggle => GetPageToggle(this);
+
+		/// <summary>Static getter for Page Toggle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		public static bool GetPageToggle(IBasicContentControl that) => that.Value<bool>("pageToggle");
 	}
 
 	/// <summary>Contact</summary>
@@ -178,6 +222,13 @@ namespace Umbraco.Web.PublishedModels
 		public global::System.Web.IHtmlString MainContent => global::Umbraco.Web.PublishedModels.BasicContentControl.GetMainContent(this);
 
 		///<summary>
+		/// Page Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageDate")]
+		public global::System.DateTime PageDate => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageDate(this);
+
+		///<summary>
 		/// Page Subtitle: Insert a subtitle
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
@@ -190,6 +241,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
 		[ImplementPropertyType("pageTitle")]
 		public string PageTitle => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageTitle(this);
+
+		///<summary>
+		/// Page Toggle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.0")]
+		[ImplementPropertyType("pageToggle")]
+		public bool PageToggle => global::Umbraco.Web.PublishedModels.BasicContentControl.GetPageToggle(this);
 	}
 
 	/// <summary>Product Item</summary>
