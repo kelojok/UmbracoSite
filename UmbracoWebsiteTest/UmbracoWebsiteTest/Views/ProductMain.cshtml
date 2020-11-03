@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ProductMain>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>Available products</h1>
+                    <span class="subheading">Limited offers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+@{
+	var selection = Umbraco.Content(Guid.Parse("7bbfc4b2-80cb-4fb0-91f0-7be01adf1973"))
+    .ChildrenOfType("productItem")
+    .Where(x => x.IsVisible());
+}
+
+
+@foreach (var item in selection)
+	{
+	
+	
+		<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/media/1v1mxb5f/greenbox-1277973_1280.jpg">
+  <div class="card-body">
+    <h5 class="card-title">@item.Value("itemTitle")</h5>
+    <p class="card-text">@item.Value("itemDescription")</p>
+    <a href="#" class="btn btn-primary">Purchase</a>
+  </div>
+</div>
+	}
+	
+	
+
+
+
+
+
